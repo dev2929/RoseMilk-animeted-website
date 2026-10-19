@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA Botanical Rose Milk — Artisanal Scroll Experience</title>
+  <meta name="description"
+    content="Experience the handcrafted fusion of Damascus rose water, chilled Jersey cream, and crushed cardamom in a fluid interactive scroll animation.">
+
+  <!-- Modern Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <!-- Fullscreen Initial Preloader -->
+  <aside id="preloader" class="preloader" role="status" aria-live="polite" aria-label="Loading animation frames">
+    <div class="preloader-glass">
+      <div class="preloader-emblem" aria-hidden="true">
+        <svg viewBox="0 0 64 64" class="rose-icon">
+          <path fill="currentColor"
+            d="M32 6c-3.1 0-5.8 1.4-7.6 3.6-2.1-.8-4.5-1.1-6.9-.6-5.8 1.2-10 6.6-9.9 12.6.1 4.5 2.5 8.5 6.1 10.7-1 3.2-.8 6.7.7 9.8 2.7 5.7 8.5 9.3 14.8 9.3s12.1-3.6 14.8-9.3c1.5-3.1 1.7-6.6.7-9.8 3.6-2.2 6-6.2 6.1-10.7.1-6-4.1-11.4-9.9-12.6-2.4-.5-4.8-.2-6.9.6C37.8 7.4 35.1 6 32 6zm0 4c2.2 0 4.1 1.2 5.2 3-.8.2-1.6.5-2.3.9-1.9-1.3-4.2-2.1-6.7-2.1-1.3 0-2.5.2-3.7.6C26 10.9 28.8 10 32 10zm-8.8 3.5c3.2 0 6.1 1.3 8.2 3.4-2.5 1.5-4.5 3.6-5.8 6.2-2.8-.7-5.5-2.2-7.4-4.3 1.4-3.1 3.2-5.3 5-5.3zm17.6 0c1.8 0 3.6 2.2 5 5.3-1.9 2.1-4.6 3.6-7.4 4.3-1.3-2.6-3.3-4.7-5.8-6.2 2.1-2.1 5-3.4 8.2-3.4zM32 20c2.8 0 5.4 1.2 7.2 3.2-2.1 1.6-4.5 2.8-7.2 3.4-2.7-.6-5.1-1.8-7.2-3.4 1.8-2 4.4-3.2 7.2-3.2zm0 8.5c3.4 0 6.6-1.1 9.2-2.9 1.4 3.2 1.6 6.9.4 10.2-2.6 1.7-5.7 2.7-9.6 2.7s-7-1-9.6-2.7c-1.2-3.3-1-7 .4-10.2 2.6 1.8 5.8 2.9 9.2 2.9zm-13.8 1.4c.6 1.4 1.4 2.8 2.4 4-2.6 1.5-4.9 3.6-6.5 6.2-.2-1.9-.3-3.8-.3-5.8 0-1.5.2-3 .5-4.4h3.9zm27.6 0h3.9c.3 1.4.5 2.9.5 4.4 0 2-.1 3.9-.3 5.8-1.6-2.6-3.9-4.7-6.5-6.2 1-1.2 1.8-2.6 2.4-4zm-22.6 15c2.6 1.7 5.7 2.7 8.8 2.7s6.2-1 8.8-2.7c1.7 3.5 1.2 7.7-1.4 10.8-2.1 2.5-5 3.9-7.4 3.9s-5.3-1.4-7.4-3.9c-2.6-3.1-3.1-7.3-1.4-10.8z" />
+        </svg>
+      </div>
+      <p class="preloader-eyebrow">COLD PRESSED BOTANICALS</p>
+      <h1 class="preloader-title">AURA ROSE MILK</h1>
+      <p class="preloader-status" id="preloader-status">Preloading 50 4K Ultra-HD frames...</p>
+
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar-fill" id="preloader-bar-fill"></div>
+      </div>
+      <div class="preloader-metrics">
+        <span id="preloader-count">0 / 50</span>
+        <span id="preloader-percentage">0%</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Luxury Floating Header -->
+  <header class="luxury-header" id="header">
+    <div class="header-inner">
+      <a href="#hero-section" class="brand-logo" id="brand-logo" aria-label="Aura Rose Milk Home">
+        <span class="logo-mark">❀</span>
+        <span class="logo-text">AURA <small>EST. 2024</small></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#experience" class="nav-link active">Animation</a>
+        <a href="#sensory" class="nav-link">Sensory Notes</a>
+        <a href="#process" class="nav-link">Cold Craft</a>
+        <a href="#configurator" class="nav-link">Reserve Bottle</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Audio Synth Toggle -->
+        <button id="sound-toggle-btn" class="icon-pill-btn" aria-label="Toggle ambient liquid soundscape"
+          title="Toggle audio experience">
+          <span class="sound-wave-icon" aria-hidden="true">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </span>
+          <span class="btn-label" id="sound-label">Audio Off</span>
+        </button>
+
+        <!-- Direct CTA -->
+        <a href="#configurator" class="reserve-btn" id="header-reserve-btn">
+          <span>Tasting Flight</span>
+          <span class="arrow-glyph">→</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Scroll Sequence Container -->
+  <main>
+    <section id="hero-section" class="scroll-hero-section">
+      <!-- Fixed Fullscreen Viewport Canvas -->
+      <div class="canvas-viewport" id="canvas-viewport">
+        <canvas id="product-canvas" aria-label="Interactive 3D Rose Milk bottle animation"></canvas>
+      </div>
+
+      <!-- Scrollytelling Milestones (Track 500vh) -->
+      <div class="story-track" id="experience">
+        <!-- Milestone 1 -->
+        <div class="story-card-wrapper pos-intro" id="milestone-1">
+          <div class="story-card glass-panel">
+            <span class="card-chapter">CHAPTER 01</span>
+            <h2 class="card-title">Pure Essence</h2>
+            <p class="card-desc">
+              Distilled from organic Damask rose petals harvested at dawn. Micro-droplets suspended in cold air, capturing intense floral volatiles.
+            </p>
+            <div class="card-pills">
+              <span class="tag">Rosa Damascena</span>
+              <span class="tag">Zero Synthetic Aroma</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="story-card-wrapper pos-left" id="milestone-2">
+          <div class="story-card glass-panel">
+            <span class="card-chapter">CHAPTER 02</span>
+            <h2 class="card-title">The Crown Splash</h2>
+            <p class="card-desc">
+              Slow-churned, single-source Jersey whole milk meets chilled rose elixir at precisely 4°C, creating a velvety hydrodynamic crown.
+            </p>
+            <div class="card-pills">
+              <span class="tag">4°C Cold Fusion</span>
+              <span class="tag">Velvet Viscosity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="story-card-wrapper pos-right" id="milestone-3">
+          <div class="story-card glass-panel">
+            <span class="card-chapter">CHAPTER 03</span>
+            <h2 class="card-title">Artisanal Silhouette</h2>
+            <p class="card-desc">
+              Embodied in heavyweight recycled glass. Crowned with chilled condensation drops that seal in the rich aromatic bouquet.
+            </p>
+            <div class="card-pills">
+              <span class="tag">Chilled Glass Bottle</span>
+              <span class="tag">Aromatics Sealed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 4 -->
+        <div class="story-card-wrapper pos-bottom" id="milestone-4">
+          <div class="story-card glass-panel highlight-panel">
+            <span class="card-chapter">CHAPTER 04</span>
+            <h2 class="card-title">The Masterpiece</h2>
+            <p class="card-desc">
+              A harmonic symphony of floral sweetness, rich creaminess, and crushed green cardamom. Pure bliss in every sip.
+            </p>
+            <div class="card-actions">
+              <a href="#configurator" class="card-cta-btn">Order Fresh Batch</a>
+              <button class="card-ghost-btn" id="replay-btn">Replay Sequence ↺</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator Hint -->
+      <div class="scroll-prompt" id="scroll-prompt" aria-hidden="true">
+        <span class="prompt-mouse">
+          <span class="wheel"></span>
+        </span>
+        <span class="prompt-text">Scroll to animate</span>
+      </div>
+    </section>
+
+    <!-- Section 2: Sensory Profile Tasting Matrix -->
+    <section id="sensory" class="sensory-section">
+      <div class="section-container">
+        <div class="section-badge">BOTANICAL TASTING PROFILE</div>
+        <h2 class="section-heading">Formulated for the Discerning Palate</h2>
+        <p class="section-subheading">
+          Every bottle of Aura Rose Milk balances traditional herbal gastronomy with modern culinary finesse.
+        </p>
+
+        <div class="sensory-grid">
+          <!-- Card 1 -->
+          <div class="sensory-card glass-panel">
+            <div class="sensory-icon">🌸</div>
+            <h3 class="sensory-name">Damask Rose Volatiles</h3>
+            <p class="sensory-text">
+              Hydro-distilled petals deliver a fragrant high-note without sharp perfume or bitterness.
+            </p>
+            <div class="sensory-meter">
+              <span class="meter-label">Aroma Intensity</span>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="sensory-card glass-panel">
+            <div class="sensory-icon">🥛</div>
+            <h3 class="sensory-name">Single-Herd Jersey Cream</h3>
+            <p class="sensory-text">
+              Rich A2 whole milk with 4.8% natural butterfat provides a velvety, coating mouthfeel.
+            </p>
+            <div class="sensory-meter">
+              <span class="meter-label">Silk Creaminess</span>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="sensory-card glass-panel">
+            <div class="sensory-icon">🌿</div>
+            <h3 class="sensory-name">Mysore Cardamom Pods</h3>
+            <p class="sensory-text">
+              Cracked green cardamom pods steeped cold for 12 hours for a clean, refreshing balsamic warmth.
+            </p>
+            <div class="sensory-meter">
+              <span class="meter-label">Spiced Resonance</span>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 78%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="sensory-card glass-panel">
+            <div class="sensory-icon">❄️</div>
+            <h3 class="sensory-name">Sub-Zero Cold Steep</h3>
+            <p class="sensory-text">
+              Blended below 3°C to preserve heat-sensitive enzymes, vital nutrients, and vibrant botanical blush.
+            </p>
+            <div class="sensory-meter">
+              <span class="meter-label">Crisp Refreshment</span>
+              <div class="meter-bar">
+                <div class="meter-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Artisanal Cold Craft Process -->
+    <section id="process" class="process-section">
+      <div class="section-container">
+        <div class="section-badge">SMALL BATCH ARTISANSHIP</div>
+        <h2 class="section-heading">From Petal to Glass Bottle</h2>
+
+        <div class="process-timeline">
+          <div class="process-step">
+            <span class="step-num">01</span>
+            <div class="step-body">
+              <h3 class="step-title">Dawn Bloom Harvest</h3>
+              <p class="step-desc">Hand-selected Rosa Damascena blossoms harvested before 7:00 AM while the dew
+                maintains aromatic oils.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <span class="step-num">02</span>
+            <div class="step-body">
+              <h3 class="step-title">Copper Alembic Distillation</h3>
+              <p class="step-desc">Gentle low-temperature vapor extraction creating concentrated culinary hydrosol
+                without additives.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <span class="step-num">03</span>
+            <div class="step-body">
+              <h3 class="step-title">16-Hour Milk Infusion</h3>
+              <p class="step-desc">Cold-steeped in sterile stainless vats at 3.5°C alongside freshly cracked green
+                cardamom.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <span class="step-num">04</span>
+            <div class="step-body">
+              <h3 class="step-title">UV Sterilized Glass Bottling</h3>
+              <p class="step-desc">Sealed in recyclable flint glass bottles and kept chilled until dispatched directly
+                to your table.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Interactive Tasting Flight & Configurator -->
+    <section id="configurator" class="configurator-section">
+      <div class="section-container">
+        <div class="config-grid">
+          <!-- Left: Preview & Specs -->
+          <div class="config-preview glass-panel">
+            <div class="product-badge">CHILLED BATCH #088</div>
+            <div class="bottle-render-wrap">
+              <img src="/frames/frame_050.jpg" alt="Aura Rose Milk Artisanal Bottle Preview" class="config-bottle-img"
+                id="config-bottle-img">
+            </div>
+            <div class="specs-row">
+              <div class="spec-item">
+                <span class="spec-label">Shelf Life</span>
+                <span class="spec-val">7 Days Chilled</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Natural Color</span>
+                <span class="spec-val">Blush Pink</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Origin</span>
+                <span class="spec-val">Farm Fresh</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Controls -->
+          <div class="config-form glass-panel">
+            <div class="section-badge">INTERACTIVE PACK BUILDER</div>
+            <h2 class="config-heading">Personalize Your Flight</h2>
+
+            <!-- Bottle Size -->
+            <div class="form-group">
+              <label class="form-label">Select Bottle Size</label>
+              <div class="option-pills" id="size-options">
+                <button type="button" class="opt-btn active" data-size="330ml" data-price="9">
+                  <span class="opt-title">330 ml</span>
+                  <span class="opt-sub">Petite Glass</span>
+                </button>
+                <button type="button" class="opt-btn" data-size="500ml" data-price="14">
+                  <span class="opt-title">500 ml</span>
+                  <span class="opt-sub">Classic Carafe</span>
+                </button>
+                <button type="button" class="opt-btn" data-size="1000ml" data-price="24">
+                  <span class="opt-title">1000 ml</span>
+                  <span class="opt-sub">Grand Table</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Sweetness -->
+            <div class="form-group">
+              <label class="form-label">Infusion Sweetness Profile</label>
+              <div class="option-pills" id="sweet-options">
+                <button type="button" class="opt-btn active" data-sweet="Raw Honey">
+                  <span class="opt-title">Raw Wildflower</span>
+                  <span class="opt-sub">Delicate & floral</span>
+                </button>
+                <button type="button" class="opt-btn" data-sweet="Traditional Cane">
+                  <span class="opt-title">Traditional</span>
+                  <span class="opt-sub">Classic rich taste</span>
+                </button>
+                <button type="button" class="opt-btn" data-sweet="Zero Added Sugar">
+                  <span class="opt-title">Pure Botanicals</span>
+                  <span class="opt-sub">Milk sugar only</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Quantity Pack -->
+            <div class="form-group">
+              <label class="form-label">Box Quantity</label>
+              <div class="pack-selector" id="pack-selector">
+                <button type="button" class="pack-btn active" data-qty="2">2-Pack</button>
+                <button type="button" class="pack-btn" data-qty="4">4-Pack <small>(Save 10%)</small></button>
+                <button type="button" class="pack-btn" data-qty="8">8-Pack <small>(Save 20%)</small></button>
+              </div>
+            </div>
+
+            <!-- Live Summary Box -->
+            <div class="summary-box">
+              <div class="summary-row">
+                <span>Selected Configuration:</span>
+                <strong id="summary-selection">330 ml • Raw Wildflower (2-Pack)</strong>
+              </div>
+              <div class="summary-row total-row">
+                <span>Total Amount:</span>
+                <span class="price-display" id="total-price">$18.00</span>
+              </div>
+            </div>
+
+            <button type="button" id="reserve-submit-btn" class="submit-order-btn">
+              <span>Reserve Chilled Delivery</span>
+              <span class="btn-shine"></span>
+            </button>
+            <p class="shipping-note">🔒 Dispatched in insulated temperature-controlled cold packs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Verified Patron Reviews -->
+    <section class="reviews-section">
+      <div class="section-container">
+        <div class="section-badge">PATRON TESTIMONIALS</div>
+        <h2 class="section-heading">Loved by Connoisseurs</h2>
+
+        <div class="reviews-grid">
+          <div class="review-card glass-panel">
+            <div class="stars">★★★★★</div>
+            <p class="review-quote">"The texture is ethereal. It avoids the sickly syrup sensation of commercial rose
+              milks and instead delivers delicate, fresh botanical notes."</p>
+            <div class="author-meta">
+              <strong>Elena Rostova</strong>
+              <span>Sommelier, Michelin Dining Guide</span>
+            </div>
+          </div>
+
+          <div class="review-card glass-panel">
+            <div class="stars">★★★★★</div>
+            <p class="review-quote">"Arrives perfectly chilled. The cracked cardamom touch lifts the natural richness of
+              the Jersey cream into something truly unforgettable."</p>
+            <div class="author-meta">
+              <strong>Marcus Sterling</strong>
+              <span>Culinary Director & Food Critic</span>
+            </div>
+          </div>
+
+          <div class="review-card glass-panel">
+            <div class="stars">★★★★★</div>
+            <p class="review-quote">"Watching the splash animation online made me order, but tasting the actual bottle
+              made me an avid weekly subscriber!"</p>
+            <div class="author-meta">
+              <strong>Aaliyah Patel</strong>
+              <span>Verified Patron, London</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Editorial Luxury Footer -->
+  <footer class="luxury-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="logo-mark">❀</span>
+            <span class="logo-text">AURA BOTANICALS</span>
+          </div>
+          <p class="footer-desc">
+            Artisanal milk beverages crafted with organic botanicals, single-source milk, and respectful time-honored
+            techniques.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Collection</h4>
+          <ul>
+            <li><a href="#hero-section">Damask Rose Milk</a></li>
+            <li><a href="#sensory">Saffron & Almond</a></li>
+            <li><a href="#sensory">Pistachio Cardamom</a></li>
+            <li><a href="#configurator">Tasting Flights</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Artisanship</h4>
+          <ul>
+            <li><a href="#process">Cold Craft Method</a></li>
+            <li><a href="#process">Regenerative Dairy</a></li>
+            <li><a href="#process">Clean Hydrosols</a></li>
+            <li><a href="#process">Glass Recirculation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4 class="footer-heading">Reserve Limited Batches</h4>
+          <p>Subscribe for notification of seasonal botanical harvests.</p>
+          <form id="newsletter-form" class="newsletter-form"
+            onsubmit="event.preventDefault(); alert('Thank you for joining Aura Reserves.');">
+            <input type="email" placeholder="Enter your email" required aria-label="Email address">
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AURA Botanicals Inc. All rights reserved. Watermark-free 4K interactive experience.</p>
+        <div class="bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sustainability Report</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Order Success Notification Toast -->
+  <div class="order-toast" id="order-toast" role="alert" aria-live="assertive">
+    <div class="toast-content">
+      <span class="toast-icon">✓</span>
+      <div class="toast-text">
+        <strong id="toast-title">Batch Reserved Successfully!</strong>
+        <p id="toast-desc">Your cold-packed flight has been staged for delivery.</p>
+      </div>
+      <button class="toast-close" id="toast-close-btn" aria-label="Close notification">×</button>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
